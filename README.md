@@ -1,6 +1,6 @@
 # hubot-ascii
 
-Convert text to ASCII
+Convert text to ASCII art
 
 See [`src/ascii.coffee`](src/ascii.coffee) for full documentation.
 
@@ -21,6 +21,14 @@ Then add **hubot-ascii** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> hubot ascii test
+hubot>>
+_            _
+| |_ ___  ___| |_
+| __/ _ \/ __| __|
+| ||  __/\__ \ |_
+\__\___||___/\__|
 ```
+
+## License
+This work is licensed under the MIT license. For details, see [LICENSE](LICENSE).
