@@ -1,16 +1,16 @@
 {
-  "name": "hubot-ascii",
+  "name": "hubot-ascii-art",
   "description": "Convert text to ASCII",
   "version": "1.0.0",
   "author": "Sander Ploegsma <sanderploegsma@gmail.com>",
   "license": "MIT",
-  "keywords": "hubot, hubot-script, hubot-scripts, ascii, generator, text",
+  "keywords": "hubot, hubot-script, hubot-scripts, ascii, art, generator, text",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sanderploegsma/hubot-ascii.git"
+    "url": "git://github.com/sanderploegsma/hubot-ascii-art.git"
   },
   "bugs": {
-    "url": "https://github.com/sanderploegsma/hubot-ascii/issues"
+    "url": "https://github.com/sanderploegsma/hubot-ascii-art/issues"
   },
   "dependencies": {
     "figlet": "^1.1.1"

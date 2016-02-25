@@ -1,4 +1,4 @@
-# hubot-ascii
+# hubot-ascii-art
 
 Convert text to ASCII art
 
@@ -8,13 +8,13 @@ See [`src/ascii.coffee`](src/ascii.coffee) for full documentation.
 
 In hubot project repo, run:
 
-`npm install hubot-ascii --save`
+`npm install hubot-ascii-art --save`
 
-Then add **hubot-ascii** to your `external-scripts.json`:
+Then add **hubot-ascii-art** to your `external-scripts.json`:
 
 ```json
 [
-  "hubot-ascii"
+  "hubot-ascii-art"
 ]
 ```
 
