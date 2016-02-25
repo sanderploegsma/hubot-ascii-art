@@ -13,7 +13,8 @@ describe 'ascii', ->
     require('../src/ascii')(@robot)
 
   it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/hello/)
+    expect(@robot.respond).to.have.been.calledWith(/ascii (.+)/i)
 
-  it 'registers a hear listener', ->
-    expect(@robot.hear).to.have.been.calledWith(/orly/)
+  it 'does not register other hear or respond listeners', ->
+    expect(@robot.hear).to.not.have.been.calledWith(/orly/)
+    expect(@robot.respond).to.not.have.been.calledWith(/image/)

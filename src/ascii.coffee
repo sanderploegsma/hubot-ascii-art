@@ -1,22 +1,24 @@
 # Description
-#   Convert text to ASCII
-#
-# Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
+#   Convert text to ASCII art
 #
 # Commands:
-#   hubot hello - <what the respond trigger does>
-#   orly - <what the hear trigger does>
+#   hubot ascii <text> - Convert the given text to ASCII art
 #
 # Notes:
 #   <optional notes required for the script>
 #
 # Author:
-#   Sander Ploegsma <sanderp@q42.nl>
+#   Sander Ploegsma <sanderploegsma@gmail.com>
+
+figlet = require('figlet')
 
 module.exports = (robot) ->
-  robot.respond /hello/, (res) ->
-    res.reply "hello!"
-
-  robot.hear /orly/, ->
-    res.send "yarly"
+  robot.respond /ascii (.+)/i, (res) ->
+    if res.match[1]
+      figlet.text res.match[1], 'Standard', (err, data) ->
+        if !err
+          res.send "\n#{data}"
+        else
+          res.send "Oops, something went wrong! Error: #{err}"
+    else
+      res.send "Oh no! You must supply text to convert!"
