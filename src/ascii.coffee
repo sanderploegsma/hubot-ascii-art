@@ -17,7 +17,12 @@ module.exports = (robot) ->
     if res.match[1]
       figlet.text res.match[1], 'Standard', (err, data) ->
         if !err
-          res.send "\n#{data}"
+          # To prevent adapters trimming whitespace at the beginning,
+          # wrap the ASCII in a code environment.
+          switch robot.adapterName
+            when 'slack' then res.send "```#{data}```"
+            when 'hipchat' then res.send "/code #{data}"
+            else res.send "\n#{data}"
         else
           res.send "Oops, something went wrong! Error: #{err}"
     else
