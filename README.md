@@ -1,5 +1,7 @@
 # hubot-ascii-art
 
+[![npm version](https://badge.fury.io/js/hubot-ascii-art.svg)](https://www.npmjs.com/package/hubot-ascii-art)
+
 Convert text to ASCII art
 
 See [`src/ascii.coffee`](src/ascii.coffee) for full documentation.
