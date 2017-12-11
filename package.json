@@ -4,7 +4,15 @@
   "version": "1.1.1",
   "author": "Sander Ploegsma <sanderploegsma@gmail.com>",
   "license": "MIT",
-  "keywords": "hubot, hubot-script, hubot-scripts, ascii, art, generator, text",
+  "keywords": [
+    "hubot",
+    "hubot-script",
+    "hubot-scripts",
+    "ascii",
+    "art",
+    "generator",
+    "text"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/sanderploegsma/hubot-ascii-art.git"
@@ -19,20 +27,10 @@
     "hubot": "3.x"
   },
   "devDependencies": {
-    "chai": "^2.1.1",
-    "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-mocha-test": "~0.12.7",
-    "grunt-release": "~0.11.0",
-    "hubot": "2.x",
-    "matchdep": "~0.3.0",
-    "mocha": "^2.1.0",
-    "sinon": "^1.13.0",
-    "sinon-chai": "^2.7.0"
+    "jest": "^21.2.1"
   },
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "jest"
   }
 }
