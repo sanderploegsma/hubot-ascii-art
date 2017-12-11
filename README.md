@@ -4,7 +4,7 @@
 
 Convert text to ASCII art
 
-See [`src/ascii.coffee`](src/ascii.coffee) for full documentation.
+See [`src/ascii.js`](src/ascii.js) for full documentation.
 
 ## Installation
 
