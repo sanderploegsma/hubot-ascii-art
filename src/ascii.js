@@ -4,9 +4,6 @@
 // Commands:
 //   hubot ascii <text> - Convert the given text to ASCII art
 //
-// Notes:
-//   <optional notes required for the script>
-//
 // Author:
 //   Sander Ploegsma <sanderploegsma@gmail.com>
 
