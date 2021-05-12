@@ -9,7 +9,7 @@
 
 const figlet = require("figlet");
 
-module.exports = (robot) =>
+module.exports = (robot) => {
   robot.respond(/ascii (.+)/i, (res) => {
     if (res.match[1]) {
       return figlet.text(res.match[1], "Standard", (err, data) => {
@@ -32,3 +32,4 @@ module.exports = (robot) =>
       return res.send("Oh no! You must supply text to convert!");
     }
   });
+};
